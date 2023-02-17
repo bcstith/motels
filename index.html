@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Motels.com - Deals & Discounts for Motel Reservations from small motels to large chains</title>
+
+		<!-- JS files -->
+
+		
+		<script src='https://kit.fontawesome.com/844e4f458c.js' crossorigin='anonymous'></script>
+
+		<!-- CSS files -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/main.css">
+
+
+	</head>
+	<body>
+	
+		<nav class="navbar navbar-expand-sm">
+		 	<div class="container mid-container">
+		 		<a href="#" class="navbar-brand"><img src="images/logo.png" /></a>
+
+		 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+		 			<span class="navbar-toggler-icon"></span>
+		 		</button>
+
+		 		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		 			<ul class="navbar-nav me-auto">
+		 				<li class="nav-item dropdown">
+		 					<a class="nav-link dropdown-toggle header-drop" href="#" role="button" data-bs-toggle="dropdown">More Travel</a>
+		 					<ul class="dropdown-menu">
+		 						<li><a class="dropdown-item" href="#">Deals</a></li>
+
+		 						<li><a class="dropdown-item" href="#">Vacation Rentals</a></li>
+
+		 						<li><a class="dropdown-item" href="#">Car Rental</a></li>
+
+		 						<li><a class="dropdown-item" href="#">Group & Meetings</a></li>
+
+		 						<li><a class="dropdown-item" href="#">Gift Cards</a></li>
+
+		 						<li><a class="dropdown-item" href="#">Hotels.com &#174; Rewards</a></li>
+
+		 						<li><a class="dropdown-item" href="#">Hotels.com &#174; Credit Cards</a></li>
+		 					</ul>
+		 				</li>
+		 			</ul>
+		 			<ul class="navbar-nav d-flex">
+		 				<li class="nav-item">
+		 					<a href="" class="nav-link"> <i class='fas fa-globe-americas'></i> English</a>
+		 				</li>
+		 				<li class="nav-item">
+		 					<a href="" class="nav-link">List your property</a>
+		 				</li>
+		 				<li class="nav-item">
+		 					<a href="" class="nav-link">Support</a>
+		 				</li>
+		 				<li class="nav-item">
+		 					<a href="" class="nav-link">Trips</a>
+		 				</li>
+		 				<li class="nav-item">
+		 					<a href="" class="nav-link">Sign In</a>
+		 				</li>
+		 			</ul>
+		 		</div>
+		 	</div>
+		</nav>
+
+		<div class="container mid-container">
+
+			<div class="search-box">
+
+				<h1 class="search-header">Search stays</h1>
+				<div id="search-form">
+
+					<form>
+						<div class="row">
+
+							<div class="col form-icon">
+
+								<input type="text" name="destination" id="destination" class="form-control search-input destination-input" placeholder="Going to">
+
+								 
+								<i class='fas fa-map-marker-alt'></i>
+
+							</div>
+
+							<div class="col form-icon">
+
+								<input type="text" name="check-in" id="check-in" class="form-control search-input search-date-input datepicker" placeholder="Check In">
+
+								<i class='far fa-calendar-alt'></i>
+
+
+							</div>
+
+							<div class="col form-icon">
+
+								<input type="text" name="check-out" id="check-out" class="form-control search-input search-date-input datepicker" placeholder="Check Out">
+
+								<i class='far fa-calendar-alt'></i>
+
+							</div>
+
+							<div class="col form-icon">
+
+								<select name="travelers" id="travelers"  class="form-control search-select traveler-input" >
+					              <option placeholder="">2 Adults</option>
+					              <option>3 Adults</option>
+					              <option>4 Adults</option>
+					              <option>5 Adults</option>
+					            </select>
+
+							</div>
+
+							<div class="row">
+								<div class="col-md-12" align="center">
+									<button type="button" id="search-btn" name="search-btn" class="btn btn-primary search-submit-btn">Search</button>
+								</div>
+							</div>
+
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+
+
+			<div class="main-box">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="images/main-image-new.png"/>
+					</div>
+					<div class="col-md-8">
+
+						<div class="deals-section">
+							<h2>Join Hotels.com® Rewards to:</h2>
+							<p>Get access to an extra 10% off as a member, plus earn 1 reward night* for every 10 nights you stay.</p>
+							<div>
+								<button type="button" id="rewards-btn" name="rewards-btn" class="btn btn-primary rewards-submit-btn">Sign Up</button>
+
+								<span ><a href="" class="signin-link">Sign In</a></span>
+							</div>
+
+							<p class="small-text">*See terms and conditions</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ad-section">
+
+				<div class="jumbotron">
+					<div class="jumbotron-inner">
+						<h1>Find your perfect somewhere</h1>
+						<p>At Motels, we make it our mission to find your match - your perfect somewhere that will make this vacation the best one yet.</p>
+						<button type="button" id="explore-btn" name="explore-btn" class="btn btn-primary explore-submit-btn">Explore Hotels</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="getaway-section">
+
+				<h4>Start planning your next getaway</h4>
+
+
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+
+					<div class="col">
+						<div class="card card-one">
+							<img src="images/card-image-1.png" class="card-img-top" >
+
+							<div class="card-img-overlay d-flex text-center">
+								<h4>FIND YOUR PERFECT SOMEWHERE</h4>
+							</div>
+
+							<div class="card-body">
+								<span class="card-body-header">Your perfect somewhere is out there</span><br>
+								<span>We will help you find it</span>
+							</div>
+
+						</div>
+					</div>
+					
+					<div class="col">
+						<div class="card card-one">
+							<img src="images/card-image-2.png" class="card-img-top" >
+
+							<div class="card-img-overlay d-flex text-center">
+								<h4>MEMBERS GET INSTANT SAVINGS WITH SECRET PRICES</h4>
+							</div>
+
+							<div class="card-body">
+								<span class="card-body-header">Pay less on selected properties</span><br>
+								<span>Book now</span>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card card-one">
+							<img src="images/card-image-3.png" class="card-img-top" >
+
+							<div class="card-img-overlay d-flex text-center">
+								<h4>SOME OF OUR FAVORITE VIP ACCESS PROPERTIES</h4>
+							</div>
+
+							<div class="card-body">
+								<span class="card-body-header">Fall in love with VIP Access properties</span><br>
+								<span>Explore today</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="credit-section">
+				<div class="row mt-4">
+					<div class="col-md-3">
+						<img src="images/credit-card-logo.png" />
+					</div>
+
+					<div class="col-md-9 mt-4 credit-text">
+						<h4>Get 2 reward nights worth $250 total (max $125 per night)* </h4>
+						<p>*Terms apply <br> <i class="fas fa-check"></i> No annual fee</p>
+
+						<button type="button" id="credit-btn" name="credit-btn" class="btn btn-primary credit-submit-btn">FIND OUT MORE</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="travel-section">
+
+				<div class="travel-section-inner">
+					<h4>Travel with confidence</h4>
+					<p>Many properties have updated us about their enhanced health and safety measures. So, during your search, you may find details like:</p>
+
+					<div class="row">
+
+						<div class="col-md-6 col-sm-12">
+
+							<div class="d-flex flex-row icon-holder">
+
+								<div class="icon"><i class="fas fa-shield-alt"></i> </div>
+
+								<div class="icon-text"><h4>Official health standards</h4> 
+								Properties adhering to corporate/organizational sanitization guidelines.</div>
+
+							</div>
+
+
+							<div class="d-flex flex-row icon-holder">
+
+								<div class="icon"><i class="fas fa-spray-can"></i> </div>
+
+								<div class="icon-text"><h4>Hygiene and Sanitization</h4> 
+								The use of disinfectant and whether properties enforce a gap period between stays.</div>
+
+							</div>
+
+						</div>
+
+
+						<div class="col-md-6  col-sm-12">
+
+							<div class="d-flex flex-row icon-holder">
+
+								<div class="icon"><i class="fas fa-people-arrows"></i> </div>
+
+								<div class="icon-text"><h4>Social distancing</h4> 
+								Contactless check-in and check-out along with other social distancing measures.</div>
+
+							</div>
+
+							<div class="d-flex flex-row icon-holder">
+
+								<div class="icon"><i class="fas fa-pump-soap"></i> </div>
+
+								<div class="icon-text"><h4>Essentials at the property</h4> 
+								Free hand sanitizer for guests and individual wrapped food options.</div>
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+				
+				</div>
+
+			</div>
+
+
+			<div class="other-section">
+
+
+				<h4>We do more than hotels...</h4>
+
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+
+					<div class="col">
+						<div class="card card-one">
+							<img src="images/other-image-1.png" class="card-img-top" >
+
+							<div class="card-img-overlay d-flex other-image-text">
+								<h4>Apartments</h4>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="col">
+						<div class="card card-one">
+							<img src="images/other-image-2.png" class="card-img-top" >
+
+							<div class="card-img-overlay d-flex other-image-text">
+								<h4>Motels</h4>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card card-one">
+							<img src="images/other-image-3.png" class="card-img-top" >
+
+							<div class="card-img-overlay d-flex other-image-text">
+								<h4>Hotels</h4>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="link-section">
+
+					<div class="row row-cols-xs-1 row-cols-lg-7">
+
+							<div class="col">
+								<img src="images/expedia_logo.png" />
+							</div>
+
+							<div class="col link-col">
+								<h4>Top destinations</h4>
+
+								<ul class="no-bullets">
+									<li><a href="">Hotels in Las Vegas</a></li>
+									<li><a href="">Hotels in New York</a></li>
+									<li><a href="">Hotels in Chicago</a></li>
+									<li><a href="">Hotels in Orlando</a></li>
+									<li><a href="">Hotels in New Orleans</a></li>
+									<li><a href="">Hotels in San Diego</a></li>
+									<li><a href="">Hotels in Nashville</a></li>
+									<li><a href="">Hotels in San Francisco</a></li>
+									<li><a href="">Hotels in Los Angeles</a></li>
+									<li><a href="">Hotels in Miami</a></li>
+									<li><a href="">Hotels in Paris</a></li>
+									<li><a href="">Hotels in Denver</a></li>
+									<li><a href="">Hotels in Washington</a></li>
+									<li><a href="">Hotels in Austin</a></li>
+									<li><a href="">Hotels in Atlanta</a></li>
+									<li><a href="">Hotels in San Antonio</a></li>
+									<li><a href="">Hotels in Boston</a></li>
+									<li><a href="">Hotels in Atlantic City</a></li>
+									<li><a href="">Hotels in Key West</a></li>
+									<li><a href="">Hotels in London</a></li>
+									<li><a href="">Hotels in Virginia Beach</a></li>
+									<li><a href="">Hotels in Seattle</a></li>
+									<li><a href="">Hotels in Anaheim</a></li>
+									<li><a href="">Hotels in Dallas</a></li>
+								</ul>
+
+							</div>
+
+							<div class="col link-col">
+								<h4>Top Countries & Regions</h4>
+
+								<ul class="no-bullets">
+									<li><a href="">Hotels in Aruba</a></li>
+									<li><a href="">Hotels in Turks and Caicos</a></li>
+									<li><a href="">Hotels in Singapore</a></li>
+									<li><a href="">Hotels in Maldives</a></li>
+									<li><a href="">Hotels in Bermuda</a></li>
+									<li><a href="">Hotels in Malta</a></li>
+									<li><a href="">Hotels in Jersey Shore</a></li>
+									<li><a href="">Hotels in Maui</a></li>
+									<li><a href="">Hotels in Puerto Rico</a></li>
+									<li><a href="">Hotels in Kauai</a></li>
+									<li><a href="">Hotels in Oahu</a></li>
+									<li><a href="">Hotels in Cape Cod</a></li>
+								</ul>
+
+							</div>
+
+							<div class="col link-col">
+								<h4>Support & FAQs</h4>
+
+								<ul class="no-bullets">
+									<li><a href="">Your bookings</a></li>
+									<li><a href="">FAQs</a></li>
+									<li><a href="">Contact us</a></li>
+									<li><a href="">Review a property</a></li>
+								</ul>
+
+							</div>
+
+							<div class="col link-col">
+								<h4>For Suppliers, Affiliates and the Media</h4>
+
+								<ul class="no-bullets">
+									<li><a href="">Affiliate with us</a></li>
+									<li><a href="">Expedia Partner Solutions</a></li>
+									<li><a href="">Promote with Us</a></li>
+									<li><a href="">Travel Agents</a></li>
+								</ul>
+
+							</div>
+
+
+							<div class="col link-col">
+								<h4>Terms and Policies</h4>
+
+								<ul class="no-bullets">
+									<li><a href="">Terms & Conditions</a></li>
+									<li><a href="">Privacy</a></li>
+									<li><a href="">Do not sell my personal information</a></li>
+									<li><a href="">Cookies</a></li>
+									<li><a href="">About our ads</a></li>
+								</ul>
+
+							</div>
+
+							<div class="col link-col">
+								<h4>Other information</h4>
+
+								<ul class="no-bullets">
+									<li><a href="">Hotels.com &copy; Credit Card</a></li>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Careers</a></li>
+									<li><a href="">Hotels near me</a></li>
+									<li><a href="">Travel Guides</a></li>
+									<li><a href="">Vacation rentals</a></li>
+									<li><a href="">Site Index</a></li>
+								</ul>
+
+							</div>
+
+					</div>
+
+
+				</div>
+
+				<div class="footer-section">
+
+					<div class="footer-section-inner">
+
+						<p>* Some hotels require you to cancel more than 24 hours before check-in. Details on site.<br>
+							&copy; 2022 Hotels.com is an Expedia Group company. All rights reserved. <br>
+						Hotels.com and the Hotels.com logo are trademarks or registered trademarks of Hotels.com, LP in the United States and/or other countries. All other trademarks are the property of their respective owners.</p>
+						
+					</div>
+
+				</div>
+
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+		<script src="js/extention/choices.js"></script>
+	    <script src="js/extention/flatpickr.js"></script>
+	    <script>
+	      flatpickr(".datepicker",
+	      {});
+
+	    </script>
+	    <script>
+	      const choices = new Choices('[data-trigger]',
+	      {
+	        searchEnabled: false,
+	        itemSelectText: '',
+	      });
+
+
+	      $('a').click(function(){
+
+	      	alert("This is a test site, and links do not work.")
+
+	      	return false;
+	      })
+
+	    </script>
+
+
+	</body>
+</html>
